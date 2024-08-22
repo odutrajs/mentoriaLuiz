@@ -1,0 +1,140 @@
+ <!-- Não usar o Flex,manter o layout sem usar o flex, apenas usar o height-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartão do Victor</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+
+        <style>
+        /* body {
+            background-color: hsl(185, 75%, 39%);
+            margin: 0;    
+            font-family: 'Kumbh Sans', sans-serif;
+            overflow: hidden;
+        }
+
+        .circleTop {
+            position: absolute;
+            top: -50%;
+            left: -15%;
+            width: 60%; 
+            height: auto; 
+        }
+        .circleBottom {
+            position: absolute;
+            bottom: -50%;
+            right: -15%;
+            width: 60%;
+            height: auto;
+        }
+        main {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .headerCard {
+            background-size: cover;
+            height: 160px;
+            border: 10px; 
+        }
+       
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: -50px; 
+        }
+        .userName {
+            margin: 5px 0 20px 0;
+            font-weight: 700;
+        }
+        .userAge {
+            font-weight: 400;
+            color: hsl(0, 0%, 59%);
+        }
+
+        .userCity {
+            font-weight: 400;
+            color: hsl(0, 0%, 59%);
+        }
+
+        .customDivider {
+            height: 2px;
+            background-color: hsl(0, 12%, 92%);
+            margin: 30px auto;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 40px 0px 40px;
+            margin-top: 30px;
+        }
+
+        .stats div {
+            text-align: center;
+        }
+
+        .statsValue {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: black;
+        }
+        .statsTitle {
+            margin: 5px 0px 20px 0px;
+            color: hsl(0, 0%, 59%);
+            letter-spacing: 2px;
+            font-size: 12px;
+        } */
+
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <img class="circleTop" src="bg-pattern-top.svg" alt="círculo azul no topo" class="pattern-top">
+            <img class="circleBottom" src="bg-pattern-bottom.svg" alt="círculo azul na parte inferior" class="pattern-bottom">
+        </section>
+        <main>
+            <section class="card">
+                <img class="headerCard" src="bg-pattern-card.svg" alt="Imagem de fundo do card no topo">
+                <img src="image-victor.jpg" alt="User profile" class="avatar">
+                <p class="userName">Victor Crest <span class="userAge">26</span></p>
+                <p class="userCity">London</p>
+                <div class="customDivider"></div>
+                <section class="stats">
+                    <div>
+                        <p class="statsValue">80K</p>
+                        <p class="statsTitle">Followers</p>
+                    </div>
+                    <div>
+                        <p class="statsValue">803K</p>
+                        <p class="statsTitle">Likes</p>
+                    </div>
+                    <div>
+                        <p class="statsValue">1.4K</p>
+                        <p class="statsTitle">Photos</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
