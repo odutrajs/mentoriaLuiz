@@ -1,0 +1,431 @@
+<!-- Aqui teremos os exercícios de cada aula afim de estressar o máximo e enteder como funciona cada processo, desde o báscio. -->
+
+<!-- Basic -->
+O que é HTML ?
+HTML é uma linguagem de marcação para páginas WEB.
+
+Exercício 1:
+- Preencher a tag de parágrafo corretamente.
+Definição da tag '<p>': usado para agrupar conteúdos relacionados de qualquer tipo, como imagens e campos de formulário, por exemplo.
+<p>This is a paragraph.</p>
+<p>This is a paragraph 2</p>
+
+Exercício 2:
+- Preencher a tag a corretamente.
+<a href="http://wwww.google.com">teste tag a</a>
+
+Atributos aceitos:
+- download: força o navegador a baixar os arquivos invés de exibi-los
+<a download="http://www.testedownload.com.br">DOWNLOAD</a>
+
+- href: URL para o qual o hyperLink(<a>) aponta;
+<a href="https://exemplo.com">HREF</a>
+
+- ping: permite que o navegador envie uma requisição de POST para a URL específica. É usado geralmente para rastreamento de cliques.
+<a href="https://exemplo.com" ping="https://exemplo.com/ping">PING</a>
+
+- target: 
+    - _blank: abre o link em uma nova janela
+        <a href="https://exemplo.com" target="_blank">HREF</a>
+    - _blank: abre no contexto atual da janela
+        <a href="https://exemplo.com" target="_self">HREF</a>
+
+<!-- Elements -->
+Exercício 1:
+- Preencher a tag hx corretamente, representam seis níveis de título de seção h1 é o nível mais alto e h6 é o nível mais baixo.
+<h1>Cabeçalho nível 1</h1>
+<h2>Cabeçalho nível 2</h2>
+<h3>Cabeçalho nível 3</h3>
+<h4>Cabeçalho nível 4</h4>
+<h5>Cabeçalho nível 5</h5>
+<h6>Cabeçalho nível 6</h6>
+
+<!-- Attributes -->
+Exercício 1: 
+- Adicionar um 'tooltip' em um elemento p.
+<p title="Example">Example</p>
+
+- title: adiciona um tooltip no elemento p, sempre quando o mouse passar por cima, ele mostra a mensagem dentro do title.
+<p title="Example">Example</p>
+
+Exercício 2: 
+- Adicionar um width e height para uma tag img.
+<img src="test.png" width="250" height="250">
+
+- img: representa uma imagem no documento.
+    - Atributos aceitos: 
+        - alt: para pessoas com deficiência visual, utilizamos a tag alt.
+        - height: tamanho da imagem no alinhamento Y
+        - width: tamanho da imagem no alinhamento X
+        - src: caminho para rendererizar a imagem
+
+<!-- Headings -->
+- Tags de Hx já comentadas.
+
+<!-- Paragraphs -->
+- hr: Separador, linha horizontal utilizada para separar itens, parágrafos,etc. 
+<hr>
+- pré: Tag utilizada para renderizar um texto pré formatado. preserva os espaços e quebras de linha.
+<pre>PRÉ</pre>
+- br: Quebra a linha, para a linha abaixo.
+<br>
+Resumo tags e atributos:
+<small>head	Armazena informações de serviço, como estilos ou título da página	
+dir — define a direção do texto;
+
+lang — define o idioma do texto do modelo
+
+p	Define um parágrafo	
+align — define o alinhamento horizontal do texto;
+
+class — define a classe de estilo;
+
+dir — define a direção do texto;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+span	Define um elemento embutido	
+class — define a classe de estilo;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+h1, h2, h3, h4, h5, h6	Definir títulos de 1 a 6 níveis	
+align — define o alinhamento horizontal do texto;
+
+class — define a classe de estilo;
+
+dir — define a direção do texto;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+img	Insere uma imagem	
+align — define o alinhamento horizontal da imagem;
+
+borda — define a largura da borda ao redor da imagem;
+
+class — define a classe de estilo;
+
+altura — define a altura da imagem;
+
+hspace — define as margens horizontais;
+
+id — especifica o identificador do elemento;
+
+src — define o caminho da imagem;
+
+style — define o estilo do elemento;
+
+usemap — conecta a imagem e o mapa de imagem (elemento <map>);
+
+vspace — define as margens verticais;
+
+largura — define a largura da imagem
+
+a	Adiciona um link	
+class — define a classe de estilo;
+
+href — define o endereço do link;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento;
+
+target — determina onde abrir o documento vinculado
+
+hr	Cria uma linha horizontal	
+align — define o alinhamento da linha horizontal;
+
+size — define a espessura da linha;
+
+largura — define a largura da linha
+
+br	Define uma quebra de linha	
+class — define a classe de estilo;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+Formatação de texto
+b, strong	Torna um texto em negrito	
+class — define a classe de estilo;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+i	Coloca um texto em itálico	
+class — define a classe de estilo;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+u	Sublinha um texto	
+class — define a classe de estilo;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+s, strike	Aplica a formatação tachada	
+class — define a classe de estilo;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+label	Especifica um rótulo de texto para a tag input	
+class — define a classe de estilo;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+font	Especifica estilos de fonte	
+class — define a classe de estilo;
+
+cor — define a cor do texto;
+
+face — define a fonte do texto;
+
+id — define o identificador do elemento;
+
+size — define o tamanho da fonte;
+
+style — define o estilo do elemento
+
+small	Diminui o tamanho da fonte em um comparado ao texto simples	
+class — define a classe de estilo;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+Lista
+li	Cria um item de lista	
+class — define a classe de estilo;
+
+dir — define a direção do texto;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento;
+
+type — define o tipo de marcador
+
+ol	Cria uma lista numerada (ordenada)	
+class — define a classe de estilo;
+
+dir — define a direção do texto;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento;
+
+type — define o tipo de marcador
+
+ul	Cria uma lista com marcadores (não ordenada)	
+class — define a classe de estilo;
+
+dir — define a direção do texto;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento
+
+Tabela
+table	Cria uma tabela	
+align — define o alinhamento horizontal do conteúdo da tabela;
+
+bgcolor — define a cor de fundo da tabela;
+
+borda — define a largura da borda ao redor da mesa;
+
+cellpadding — define a distância entre a borda da célula e seu conteúdo;
+
+cellspacing — define o espaçamento entre as células da tabela;
+
+class — define a classe de estilo;
+
+dir — define a direção do texto;
+
+frame — determina como exibir a borda externa da tabela;
+
+id — especifica o identificador do elemento;
+
+regras — determina como exibir as bordas entre as células da tabela;
+
+style — define o estilo do elemento;
+
+largura — define a largura da tabela
+
+tr	Define uma linha da tabela	
+align — define o alinhamento do conteúdo da linha horizontal;
+
+bgcolor — define a cor da linha de fundo;
+
+class — define a classe de estilo;
+
+dir — define a direção do texto;
+
+id — especifica o identificador do elemento;
+
+style — define o estilo do elemento;
+
+valign — define o alinhamento vertical do conteúdo da linha
+
+td	Define uma célula da tabela	
+abbr — define uma breve descrição do conteúdo da célula;
+
+align — define o alinhamento horizontal do conteúdo da célula;
+
+bgcolor — define a cor de fundo da célula;
+
+class — define a classe de estilo;
+
+colspan — define o número de células mescladas horizontalmente;
+
+dir — define a direção do texto;
+
+altura — define a altura da célula;
+
+id — especifica o identificador do elemento;
+
+lang — define o idioma do texto da célula;
+
+rowspan — define o número de células mescladas verticalmente;
+
+escopo — define como a célula é associada ao cabeçalho;
+
+style — define o estilo do elemento;
+
+valign — define o alinhamento vertical do conteúdo da célula;
+
+largura — define a largura da célula
+
+th	Define uma célula de cabeçalho de tabela	
+abbr — define uma breve descrição do conteúdo da célula;
+
+align — define o alinhamento horizontal do conteúdo da célula;
+
+fundo — define a imagem de fundo da célula;
+
+bgcolor — define a cor de fundo da célula;
+
+class — define a classe de estilo;
+
+colspan — define o número de células mescladas horizontalmente;
+
+dir — define a direção do texto;
+
+altura — define a altura da célula;
+
+id — especifica o identificador do elemento;
+
+lang — define o idioma do texto da célula;
+
+escopo — define como a célula é associada ao cabeçalho;
+
+style — define o estilo do elemento;
+
+valign — define o alinhamento vertical do conteúdo da célula;
+
+largura — define a largura da célula
+</small>
+
+<!-- Styles -->
+Setar um atributo css dentro de uma tag html.
+exemplo da estrutura: '<tagname style="property:value;">'.
+
+Exercício 1:
+- Setar a cor azul para o parágrafo.
+<p style="color:blue">Parágrafo azul</p>
+
+Exercício 2:
+- Setar a font courier para o parágrafo.
+<p style="font-family: 'Courier New', Courier, monospace;">Courier</p>
+
+Exercício 3:
+- Centralizar um parágrago.
+<p style="text-align: center">Centralizado.</p>
+
+Exercício 4:
+- Setar o tamanho do texto para 50px.
+<p style="font-size: 50px;">Fonte com 50px</p>
+
+Exercício 5:
+- Setar a cor do background para yellow.
+<body style="background-color: yellow;">Fonte com 50px</body>
+
+Exercício 6:
+- Centralizar documento.
+<body style="text-align: center;">Fonte com 50px</body>
+
+<!-- Formating -->
+ Estilos de fontes HTML, já mencionados, por exemplo: <i>I</i>
+
+ <!-- Quotation -->
+  - Algumas tags e suas funções:
+    - blockQuote: funciona como uma mensagem de citação.
+    - q: funciona como uma mensagem de citação curta.
+    - abbr: abreviação e opcionalmente ofertar uma descrição completa para ela através do atributo title.
+        <abbr title="Mister, Senhor, Caro">Mr.</abbr>
+    - address: renderização como endereço, utilizando alguns stlyles por default.
+    - bdo: pode renderizar o texto de trás para frente.
+
+<!-- Comments -->
+- Utlizamos a estrutura: <!-- -->
+
+<!-- Colors -->
+- Podemos usar cores nos valores RGB,HEX,HSL, RGBA ou HSLA
+    <h1 style="background-color:DodgerBlue;">Hello World</h1>
+    <h1 style="background-color:#fff;">Hello World</h1>
+    <h1 style="background-color:rgb(255, 99, 71);">Hello World</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">Hello World</h1>
+
+<!-- CSS -->
+- podemos definir uma estrutura de css dentro do body.
+<style></style>
+
+<!-- Links -->
+- Já mostrado anteriormente com a tag p
+- Ponto interessante é conseguir definir um caminho mediante a um id, exemplo:
+    <p id="C4">C4</p>
+    <a href="#C4">aqui leva até o id C4.</a>
+
+<!-- Images -->
+- Já mostrado anteriormente com a tag img
+- Imagem Maps: Possibilidade de realizar um mapeamento dentro da imagem por meio de coordenadas.
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+    </map>
+- Background image: Possibilidade de inserir uma imagem ao fundo da página completa.
+    body {
+        background-image: url('img_girl.jpg'); caminho da imagem
+        background-repeat: no-repeat;          não repetir a image, deixar esticada
+        background-attachment: fixed;          imagem será fixada ao fundo da tela
+        background-size: 100% 100%;            define o tamanho da imagem, utilizando percentual para ser responsivo
+    }
+
+<!-- Favicon -->
+- Para adicionar favicon ao site: 
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+<!-- Title -->
+- Para adicionar o título a página:
+    <title>HTML Tutorial</title>
+
+<!-- Tables -->
+
+
+
