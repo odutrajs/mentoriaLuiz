@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão do Victor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <img id="circleTop" src="bg-pattern-top.svg" alt="círculo azul no topo">
+        <img id="circleBottom" src="bg-pattern-bottom.svg" alt="círculo azul na parte inferior">
+    </section>
+    <main>
+        <section id="card">
+            <img id="headerCard" src="bg-pattern-card.svg" alt="Imagem de fundo do card no topo">
+            <img src="image-victor.jpg" alt="User profile" id="avatar">
+            <p id="userName">Victor Crest <span id="userAge">26</span></p>
+            <p id="userCity">London</p>
+            <hr id="customDivider">
+            <section id="stats">
+                <div>
+                    <p class="statsValue">80K</p>
+                    <p class="statsTitle">Followers</p>
+                </div>
+                <div>
+                    <p class="statsValue">803K</p>
+                    <p class="statsTitle">Likes</p>
+                </div>
+                <div>
+                    <p class="statsValue">1.4K</p>
+                    <p class="statsTitle">Photos</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script>
+        document.body.style.backgroundColor = 'hsl(185, 75%, 39%)';
+        document.body.style.margin = '0';
+        document.body.style.fontFamily = "'Kumbh Sans', sans-serif";
+        document.body.style.overflow = 'hidden';
+
+        const circleTop = document.getElementById('circleTop');
+        circleTop.style.position = 'absolute';
+        circleTop.style.top = '-50%';
+        circleTop.style.left = '-15%';
+        circleTop.style.width = '60%';
+        circleTop.style.height = 'auto';
+
+        const circleBottom = document.getElementById('circleBottom');
+        circleBottom.style.position = 'absolute';
+        circleBottom.style.bottom = '-50%';
+        circleBottom.style.right = '-15%';
+        circleBottom.style.width = '60%';
+        circleBottom.style.height = 'auto';
+
+        const main = document.querySelector('main');
+        main.style.display = 'flex';
+        main.style.justifyContent = 'center';
+        main.style.alignItems = 'center';
+        main.style.height = '100vh';
+
+        const card = document.getElementById('card');
+        card.style.backgroundColor = '#fff';
+        card.style.width = '400px';
+        card.style.height = 'auto';
+        card.style.borderRadius = '10px';
+        card.style.textAlign = 'center';
+        card.style.overflow = 'hidden';
+        card.style.zIndex = '1';
+
+        const headerCard = document.getElementById('headerCard');
+        headerCard.style.backgroundSize = 'cover';
+        headerCard.style.height = '160px';
+        headerCard.style.border = '10px';
+
+        const avatar = document.getElementById('avatar');
+        avatar.style.width = '100px';
+        avatar.style.height = '100px';
+        avatar.style.borderRadius = '50%';
+        avatar.style.border = '5px solid white';
+        avatar.style.marginTop = '-50px';
+
+        const userName = document.getElementById('userName');
+        userName.style.margin = '5px 0 20px 0';
+        userName.style.fontWeight = '700';
+
+        const userAge = document.getElementById('userAge');
+        userAge.style.fontWeight = '400';
+        userAge.style.color = 'hsl(0, 0%, 59%)';
+
+        const userCity = document.getElementById('userCity');
+        userCity.style.fontWeight = '400';
+        userCity.style.color = 'hsl(0, 0%, 59%)';
+
+        const customDivider = document.getElementById('customDivider');
+        customDivider.style.height = '2px';
+        customDivider.style.backgroundColor = 'hsl(0, 12%, 92%)';
+        customDivider.style.margin = '30px auto';
+        customDivider.style.border = 'none';
+
+        const stats = document.getElementById('stats');
+        stats.style.display = 'flex';
+        stats.style.justifyContent = 'space-between';
+        stats.style.padding = '0px 40px';
+        stats.style.marginTop = '30px';
+
+        const statsValues = document.querySelectorAll('.statsValue');
+        statsValues.forEach(value => {
+            value.style.margin = '0';
+            value.style.fontSize = '18px';
+            value.style.fontWeight = '700';
+            value.style.color = 'black';
+        });
+
+        const statsTitles = document.querySelectorAll('.statsTitle');
+        statsTitles.forEach(title => {
+            title.style.margin = '5px 0 20px 0';
+            title.style.color = 'hsl(0, 0%, 59%)';
+            title.style.letterSpacing = '2px';
+            title.style.fontSize = '12px';
+        });
+    </script>
+</body>
+</html>
