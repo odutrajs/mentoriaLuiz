@@ -1,8 +1,8 @@
    { "desserts" : [
-            { "name": "Waffle with Berries", "price": "$6.50", "image": "https://i.ibb.co/HGJTFFH/image-baklava-thumbnail.jpg" },
-            { "name": "Vanilla Bean Crème Brûlée", "price": "$7.00", "image": "https://i.ibb.co/SRYS1gL/image-brownie-thumbnail.jpg" },
-            { "name": "Macaron Mix of Five", "price": "$8.00", "image": "https://i.ibb.co/QMkGgLX/image-cake-thumbnail.jpg" },
-            { "name": "Classic Tiramisu", "price": "$5.50", "image": "https://i.ibb.co/3YXHqmF/image-creme-brulee-thumbnail.jpg" },
-            { "name": "Pistachio Baklava", "price": "$4.00", "image": "https://i.ibb.co/gypFVJr/image-macaron-thumbnail.jpg" }
+            { "name": "Waffle with Berries", "price": "$6.50", "image": "https://i.ibb.co/LR33p1Q/image-baklava-desktop.jpg"},
+            { "name": "Vanilla Bean Crème Brûlée", "price": "$7.00", "image": "https://i.ibb.co/T244C9R/image-brownie-desktop.jpg"},
+            { "name": "Macaron Mix of Five", "price": "$8.00", "image": "https://i.ibb.co/tJMt9CF/image-macaron-desktop.jpg" },
+            { "name": "Classic Tiramisu", "price": "$5.50", "image": "https://i.ibb.co/TMK9nV6/image-creme-brulee-desktop.jpg" },
+            { "name": "Pistachio Baklava", "price": "$4.00", "image": "https://i.ibb.co/vXR6Hhr/image-waffle-desktop.jpg" }
         ]
    }
