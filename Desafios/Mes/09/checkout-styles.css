@@ -1,0 +1,112 @@
+.checkout {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(20, 50%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.titleCheckout {
+    color: #d2691e;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.checkoutPrincipalContainerList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.checkoutContainerList {
+    display: flex;
+    flex-direction: column;
+}
+
+.productName {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.checkoutList {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.quantityOfProducts {
+    color: #d2691e;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.priceProduct,
+.totalValue {
+    color: #69330c;
+    font-size: 0.9rem;
+}
+
+.totalValue {
+    font-weight: 500;
+}
+
+.removeItem {
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid hsl(7, 20%, 60%);
+    cursor: pointer;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+.totalSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.totalAmount {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.carbonNeutralDelivery {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(13, 31%, 94%);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20
+}
+.carbonNeutral {
+    font-weight: 600;
+    color: #333;
+}
+
+.carbonNeutralText {
+    margin-left: 10px;
+}
+
+.confirmOrderButton {
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.confirmOrderButton:hover {
+    background-color: #d2691e;
+}

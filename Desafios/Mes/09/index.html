@@ -1,189 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dessert Cards</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            padding: 10px;
-        }
-
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .title {
-            text-align: center;
-            color: #d2691e;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .dessert-list {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 15px;
-        }
-
-        /* Adjusted title for small caption above */
-        .card-subtitle {
-            font-size: 0.8rem;
-            color: #999;
-            margin-bottom: 4px;
-        }
-
-        .card-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: #333;
-        }
-
-        .card-price {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #d2691e;
-            margin-bottom: 10px;
-        }
-
-        .add-to-cart {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            background-color: #fff;
-            color: #d2691e;
-            border: 2px solid #d2691e;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-            width: 100%;
-            text-align: center;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-
-        .add-to-cart:hover {
-            background-color: #d2691e;
-            color: #fff;
-        }
-
-        .add-to-cart svg {
-            margin-right: 5px;
-        }
-
-        /* Estilos para dispositivos maiores (tablet) */
-        @media (min-width: 768px) {
-            .dessert-list {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .card-title {
-                font-size: 1.4rem;
-            }
-
-            .card-price {
-                font-size: 1.2rem;
-            }
-
-            .add-to-cart {
-                font-size: 1rem;
-            }
-        }
-
-        /* Estilos para desktop */
-        @media (min-width: 1024px) {
-            .container {
-                max-width: 1200px;
-            }
-
-            .title {
-                font-size: 2.5rem;
-            }
-
-            .dessert-list {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .card-title {
-                font-size: 1.5rem;
-            }
-
-            .card-price {
-                font-size: 1.3rem;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dessert-styles.css">
+    <link rel="stylesheet" href="checkout-styles.css">
 </head>
+
 <body>
     <div class="container">
-        <h1 class="title">Desserts</h1>
-        <div id="dessert-list" class="dessert-list"></div>
-    </div>
+        <div class="main-content">
+            <h1 class="title">Desserts</h1>
+            <div id="dessert-list" class="dessert-list"></div>
 
-<script>
-    async function fetchDesserts() {
-        try {
-            const response = await fetch('https://my-json-server.typicode.com/odutrajs/mentoriaLuiz/db');
-            const data = await response.json();
-            return data.desserts; 
-        } catch (error) {
-            console.error('Erro ao buscar os dados:', error);
-            return [];
-        }
-    }
-    async function renderDesserts() {
-    const desserts = await fetchDesserts();
-    const container = document.getElementById('dessert-list');
-
-    container.innerHTML = desserts.map(dessert => `
-        <div class="card">
-            <img src="${dessert.image}" alt="${dessert.name}">
-            <div class="card-content">
-                <p class="card-subtitle">Dessert</p>
-                <h3 class="card-title">${dessert.name}</h3>
-                <p class="card-price">${dessert.price}</p>
-                <div class="add-to-cart">
-                    <span>Add to Cart</span>
+            <div class="checkout">
+                <p class="titleCheckout">Your Cart (7)</p>
+                <div class="checkoutPrincipalContainerList">
+                    <div class="checkoutContainerList">
+                        <p class="productName">Classic Tiramisu</p>
+                        <div class="checkoutList">
+                            <p class="quantityOfProducts">1x</p>
+                            <p class="priceProduct">@ $5.50</p>
+                            <p class="totalValue">$5.50</p>
+                        </div>
+                    </div>
+                    <img class="removeItem" width="18" height="18" src="./assets/images/icon-remove-item.svg"
+                        alt="Remove item">
                 </div>
+                <hr class="divider">
+                <div class="totalSection">
+                    <p>Order Total</p>
+                    <p class="totalAmount">$46.50</p>
+                </div>
+
+                <div class="carbonNeutralDelivery">
+                    <img src="./assets/images/icon-carbon-neutral.svg" alt="Carbon-neutral delivery">
+                    <p class="carbonNeutralText">This is a <span class="carbonNeutral">carbon-neutral</span> delivery
+                    </p>
+                </div>
+                <button class="confirmOrderButton">Confirm Order</button>
             </div>
         </div>
-    `).join('');
-}
-window.onload = renderDesserts;
+    </div>
 
-</script>
+    <script src="mainjs.js"></script>
 </body>
+
 </html>

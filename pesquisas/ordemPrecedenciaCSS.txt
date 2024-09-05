@@ -3,5 +3,3 @@ Regra de precedência em folhas de estilo CSS
 - Regra inline: Estilo aplicado no style direto no HTML
 - Regra style: Aplicada dentro da tag <style>
 - Regra ID '#'
-- Regras Classe, Atributo e Pseudo-classe: (começam com . para classes, [] para atributos e : para pseudo-classes).
-- Regras Elemento e Pseudo-elemento (seletores de elementos e pseudo-elementos).
