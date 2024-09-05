@@ -1,7 +1,12 @@
-[
-    {
-       "image": "teste",
-       "teste":"teste"
-    }
-    
-]
+   { "desserts" : [
+            { "name": "Waffle with Berries", "price": "$6.50", "image": "https://via.placeholder.com/300x200?text=Waffle+with+Berries" },
+            { "name": "Vanilla Bean Crème Brûlée", "price": "$7.00", "image": "https://via.placeholder.com/300x200?text=Vanilla+Bean+Creme+Brulee" },
+            { "name": "Macaron Mix of Five", "price": "$8.00", "image": "https://via.placeholder.com/300x200?text=Macaron+Mix+of+Five" },
+            { "name": "Classic Tiramisu", "price": "$5.50", "image": "https://via.placeholder.com/300x200?text=Classic+Tiramisu" },
+            { "name": "Pistachio Baklava", "price": "$4.00", "image": "https://via.placeholder.com/300x200?text=Pistachio+Baklava" },
+            { "name": "Lemon Meringue Pie", "price": "$5.00", "image": "https://via.placeholder.com/300x200?text=Lemon+Meringue+Pie" },
+            { "name": "Red Velvet Cake", "price": "$4.50", "image": "https://via.placeholder.com/300x200?text=Red+Velvet+Cake" },
+            { "name": "Salted Caramel Brownie", "price": "$6.50", "image": "https://via.placeholder.com/300x200?text=Salted+Caramel+Brownie" },
+            { "name": "Vanilla Panna Cotta", "price": "$6.50", "image": "https://via.placeholder.com/300x200?text=Vanilla+Panna+Cotta" }
+        ]
+   }
