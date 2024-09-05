@@ -158,7 +158,7 @@
         try {
             const response = await fetch('https://my-json-server.typicode.com/odutrajs/mentoriaLuiz/db');
             const data = await response.json();
-            return data.desserts; // Retorna o array de desserts
+            return data.desserts; 
         } catch (error) {
             console.error('Erro ao buscar os dados:', error);
             return [];
